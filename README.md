@@ -1,16 +1,15 @@
 # Mailcow-Clean-Backups-and-FTP-Transfer
-Script that cleans a Mailcow server's backup folder of old, space consuming backups and transfers them to the FTP server of your choosing.
+Script that cleans a Mailcow server's backup folder of old, space consuming backups and transfers them to the FTP server of your choosing. The script is set up to keep 7 days worth of backups on your FTP server and keep your Mailcow server clean of large backup files.
 
 
 ## Getting Started
 
 First, you will need to use the built-in mailcow backup script to generate your compressed database files. 
 
-Mailcow Backup Generation Command: 
 ```bash
 MAILCOW_BACKUP_LOCATION=/opt/backup /opt/mailcow-dockerized/helper-scripts/backup_and_restore.sh backup all
 ```
-Set this command to run as a cron task daily.
+You will need to set this command to run as a cron task on a daily basis.
 
 
 
