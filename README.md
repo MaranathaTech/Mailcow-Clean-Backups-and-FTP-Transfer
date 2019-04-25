@@ -41,7 +41,7 @@ php /the-dir-you-uploaded-the-script-to/clean-mailcow-backups-and-transfer.php
 https://mailcow.github.io/mailcow-dockerized-docs/b_n_r_backup/
 
 
-##Additional Info on Setting Up Cron Tasks
+## Additional Info on Setting Up Cron Tasks
 https://help.ubuntu.com/community/CronHowto
 
 
