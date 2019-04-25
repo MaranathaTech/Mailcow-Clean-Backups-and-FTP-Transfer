@@ -40,6 +40,11 @@ php /the-dir-you-uploaded-the-script-to/clean-mailcow-backups-and-transfer.php
 ## Additional Info on Mailcow Backup Generation
 https://mailcow.github.io/mailcow-dockerized-docs/b_n_r_backup/
 
+
+##Additional Info on Setting Up Cron Tasks
+https://help.ubuntu.com/community/CronHowto
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
