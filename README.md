@@ -34,7 +34,7 @@ $backupsDir = "/opt/backup/";
 Finally, set the following command to run as a cron task on a daily basis to execute this script daily:
 ```bash
 php /the-dir-you-uploaded-the-script-to/clean-mailcow-backups-and-transfer.php
-```bash
+```
 
 
 ## Additional Info on Mailcow Backup Generation
