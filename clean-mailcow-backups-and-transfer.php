@@ -24,10 +24,10 @@ foreach($deletions as $to_delete) {
     echo "\nName: ".$name."Dir: ".$to_delete."\n";
     exec('tar -cvf '.$to_delete.'.tar.gz '.$to_delete.'');
     $files = glob($to_delete."/*");
-    
-        foreach($files as $file){
-            unlink($file);
-        }
+
+    foreach($files as $file){
+        unlink($file);
+    }
 
     $deleted = rmdir($to_delete);
 }
@@ -54,9 +54,9 @@ $dateDir = date("Y-m-d");
 
 // try to create the directory $dateDir
 if (ftp_mkdir($ftp_conn, $dateDir)) {
- echo "successfully created $dateDir\n";
+    echo "successfully created $dateDir\n";
 } else {
- echo "There was a problem while creating $dateDir\n";
+    echo "There was a problem while creating $dateDir\n";
 }
 
 
@@ -111,6 +111,7 @@ if (ftp_chdir($ftp_conn, $oldDir)) {
 
 //delete all files within that directory
 $files = ftp_nlist($ftp_conn, ".");
+
 foreach ($files as $file)
 {
     ftp_delete($ftp_conn, $file);
